@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="We Shop Api Test">
+    <listeners>
+        <listener class-name="testnglistener.Listener"/>
+    </listeners>
+    <test name="WeShopApiTest" preserve-order="true" thread-count="10" parallel="methods">
+        <classes>
+            <class name="Tests.TeamsEndPointTestSuite"/>
+            <class name="Tests.ApiChaining_MultipleRequest_In_a_Test"/>
+            <class name="Tests.CapabilityEndPointTestSuite"/>
+        </classes>
+    </test>
+</suite>
